@@ -5,6 +5,18 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: Einleitung
+- file: TED_Talks
+- file: Gewählter_Datensatz
+- file: Bid_Idea_Worksheet
+- file: Erste_Skizze_für_mein_Dashboard
+- file: Word_Cloud
+- file: Suchfunktion
+- file: Wichtige_Kennzahlen
+- file: Scatterplot
+- file: Datenauswertung_und_Datenselektion_mit_Pandas
+- file: Reporting
+- file: Corporate_Design
+- file: Darstellung_der_Grafiken
+- file: Dashboard_Programmierung_mit_Dash
+- file: Python_Libraries_und_sonstige_Hilfen
