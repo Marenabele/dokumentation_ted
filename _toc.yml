@@ -22,6 +22,7 @@ parts:
   chapters:
   - file: Corporate_Design
   - file: Darstellung_der_Grafiken
+  - file: Skizzen_der_Grafiken
 - caption: Datenauswertung und Datenselektion mit Pandas
   chapters: 
   - file: Datenauswertung_und_Datenselektion_mit_Pandas
