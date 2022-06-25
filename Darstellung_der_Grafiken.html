@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Datenauswertung &amp; Datenselektion mit Pandas" href="Datenauswertung_und_Datenselektion_mit_Pandas.html" />
+    <link rel="next" title="Skizzen der Grafiken" href="Skizzen_der_Grafiken.html" />
     <link rel="prev" title="Corporate Design" href="Corporate_Design.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -164,6 +164,11 @@ const thebe_selector_output = ".output, .cell_output"
    Darstellung der Grafiken
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Skizzen_der_Grafiken.html">
+   Skizzen der Grafiken
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -179,6 +184,18 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Reporting
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Reporting_Erstellung.html">
+   Reporting
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Dashboard
  </span>
 </p>
@@ -186,6 +203,23 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Dashboard_Programmierung_mit_Dash.html">
    Dashboard Programmierung mit Dash
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Präsentation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Storyboarding.html">
+   Storyboarding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Pr%C3%A4sentation_erstellen.html">
+   Erstellung der Präsenation
   </a>
  </li>
 </ul>
@@ -362,29 +396,41 @@ const thebe_selector_output = ".output, .cell_output"
 <tr class="row-even"><td><p>Wie hoch ist die durchschnittliche Like-Anzahl?</p></td>
 <td><p>Highlight Box</p></td>
 </tr>
-<tr class="row-odd"><td><p>Welches ist das Video mit den meisten Likes?</p></td>
+<tr class="row-odd"><td><p>Wie hoch ist die durchschnittliche View-Anzahl?</p></td>
+<td><p>Highlight Box</p></td>
+</tr>
+<tr class="row-even"><td><p>Welches ist das Video mit den meisten Likes?</p></td>
+<td><p>Highlight Box</p></td>
+</tr>
+<tr class="row-odd"><td><p>Welches ist das Video mit den meisten Views?</p></td>
 <td><p>Highlight Box</p></td>
 </tr>
 <tr class="row-even"><td><p>Welches ist das Video mit den wenigsten Likes?</p></td>
 <td><p>Highlight Box</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Analysis</strong></p></td>
+<tr class="row-odd"><td><p>Welches ist das Video mit den wenigsten Views?</p></td>
+<td><p>Highlight Box</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Analysis</strong></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p>In welchem Monat und Jahr kamen die meisten Ted Talks heraus?</p></td>
-<td><p>Bar Chart // Line</p></td>
+<tr class="row-odd"><td><p>In welchem Monat und Jahr kamen die meisten Ted Talks heraus?</p></td>
+<td><p>Line Chart</p></td>
 </tr>
-<tr class="row-odd"><td><p>Wie viele Videos wurden über die Jahre jährlich veröffentlicht?</p></td>
-<td><p>Bar Chart // Line</p></td>
+<tr class="row-even"><td><p>Wie viele Videos wurden über die Jahre jährlich veröffentlicht?</p></td>
+<td><p>Line Chart</p></td>
 </tr>
-<tr class="row-even"><td><p>Welcher Autor hat im Durchschnitt die meisten Likes auf die Videos erhalten?</p></td>
-<td><p>Columns</p></td>
+<tr class="row-odd"><td><p>Welcher Autor (Die 8 Autoren mit den meisten Videos) hat im Durchschnitt die meisten Likes auf die Videos erhalten?</p></td>
+<td><p>Bar Chart</p></td>
+</tr>
+<tr class="row-even"><td><p>Welcher Autor (Die 8 Autoren mit den meisten Videos) hat im Durchschnitt die meisten Views auf die Videos erhalten?</p></td>
+<td><p>Bar Chart</p></td>
 </tr>
 <tr class="row-odd"><td><p>Korrelation zwischen Views und Likes</p></td>
 <td><p>Scatter plot</p></td>
 </tr>
 <tr class="row-even"><td><p>Welche Keywords können aus den Titeln der Talks abgeleitet werden?</p></td>
-<td><p>Columns</p></td>
+<td><p>Columns &amp; Wordcloud</p></td>
 </tr>
 <tr class="row-odd"><td><p>Wie häufig kommen diese Keywords in den Titeln der Talks vor?</p></td>
 <td><p>Columns</p></td>
@@ -459,10 +505,10 @@ Grundsätzlich gilt hier, dass die Inhalte der Vorlesungsfolien berücksichtigt 
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="Datenauswertung_und_Datenselektion_mit_Pandas.html" title="next page">
+        <a class="right-next" href="Skizzen_der_Grafiken.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Datenauswertung &amp; Datenselektion mit Pandas</p>
+                <p class="prevnext-title">Skizzen der Grafiken</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

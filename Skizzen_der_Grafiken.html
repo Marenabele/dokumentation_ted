@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Data Storytelling - TED Talk Explorer</title>
+    <title>Skizzen der Grafiken &#8212; Data Storytelling - TED Talk Explorer</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,6 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Datenauswertung &amp; Datenselektion mit Pandas" href="Datenauswertung_und_Datenselektion_mit_Pandas.html" />
+    <link rel="prev" title="Darstellung der Grafiken" href="Darstellung_der_Grafiken.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -151,7 +153,7 @@ const thebe_selector_output = ".output, .cell_output"
   Darstellung
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Corporate_Design.html">
    Corporate Design
@@ -162,8 +164,8 @@ const thebe_selector_output = ".output, .cell_output"
    Darstellung der Grafiken
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Skizzen_der_Grafiken.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Skizzen der Grafiken
   </a>
  </li>
@@ -273,7 +275,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Start und Planung.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Skizzen_der_Grafiken.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -293,7 +295,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
                     class="fab fa-github"></i>Repository</button></a>
         <a class="issues-button"
-            href="https://github.com/Marenabele/dokumentation_ted/issues/new?title=Issue%20on%20page%20%2FStart und Planung.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Marenabele/dokumentation_ted/issues/new?title=Issue%20on%20page%20%2FSkizzen_der_Grafiken.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
         
@@ -318,7 +320,37 @@ const thebe_selector_output = ".output, .cell_output"
                 <i class="fas fa-list"></i> Inhalt
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wordcloud">
+   Wordcloud
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scatterplot">
+   Scatterplot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#line-chart">
+   Line Chart
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-horizontal">
+   Bar Chart Horizontal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-vertikal">
+   Bar Chart Vertikal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bemerkung">
+   Bemerkung
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -329,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Skizzen der Grafiken</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -338,7 +370,37 @@ const thebe_selector_output = ".output, .cell_output"
                             <h2> Inhalt </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wordcloud">
+   Wordcloud
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scatterplot">
+   Scatterplot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#line-chart">
+   Line Chart
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-horizontal">
+   Bar Chart Horizontal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-vertikal">
+   Bar Chart Vertikal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bemerkung">
+   Bemerkung
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -348,7 +410,40 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="skizzen-der-grafiken">
+<h1>Skizzen der Grafiken<a class="headerlink" href="#skizzen-der-grafiken" title="Permalink to this headline">¶</a></h1>
+<p>Im weiteren vorgehen habe ich zunächst meine Grafiken skizziert und mir vorgestellt, wie diese aussehen sollen. Hierfür habe ich mich an den Beispielen der Vorlesugnsfolien orientiert.</p>
+<div class="section" id="wordcloud">
+<h2>Wordcloud<a class="headerlink" href="#wordcloud" title="Permalink to this headline">¶</a></h2>
+<p>Wie bereits erwähnt möchte ich eine Wordcloud mit den Keywords aus den Titeln der TED Talks erstellen. Hierfür habe ich mich dazu entschieden, dass die Wordcloud in der Form des TED-Logos geformt sein soll. Die Farben sind wie im <span class="xref myst">Beitrag</span> erwähnt in dem Rot des Logos gehalten. Wobei auch orangene und beige Abstufungen enthalten sind. Je häufiger ein Keyword vorkommt, umso größer wird das Wort dargestellt.</p>
+<p><img alt="Skizze Wordcloud" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/Keywords.png" /></p>
+</div>
+<div class="section" id="scatterplot">
+<h2>Scatterplot<a class="headerlink" href="#scatterplot" title="Permalink to this headline">¶</a></h2>
+<p>Um das Verhältnis von Views und Likes darzustellen habe ich mich für einen Scatterplot entschieden. Die Gründe lesen Sie in dem Beitrag zu <span class="xref myst">Scatterplots</span>. Bei dieser Grafik habe ich mich dazu entschieden die Datenpunkte im TED-Rot darstellen zu lassen. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik.</p>
+<p><img alt="Skizze Scatterplot" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/korrelation.png" /></p>
+</div>
+<div class="section" id="line-chart">
+<h2>Line Chart<a class="headerlink" href="#line-chart" title="Permalink to this headline">¶</a></h2>
+<p>Für die Darstellung der veröffentlichten TED Talks nach Monat und Jahr der letzten 5 Jahre habe ich mich für ein Line-Chart entschieden, da man hier gut einen Verlauf über Zeiträume darstellen kann. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik. Die X-Achse zeigt die Zeit in Monate und Jahren an. Die Monate sind durch kürze Striche getrennt, die Jahre durch längere. Die Jahre werden dann mittig unterhalb der Monate angezeigt. Die Linie soll in einem Orange dargestellt werden, da Auffäligkeiten im Verlauf mit dem TED-rot gehighlightet werden sollen. Außerdem soll in der ganzen Grafik in einem leichten Beige der Durchschnitt an veröffentlichten Videos pro Monat in den letzten 5 Jahren angezeigt werden. So kann man schnell sehen, ob ein Monat über oder unter diesem Durchschnitt liegt.</p>
+<p><img alt="Line Chart Verteilung Monat und Jahr" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/videos_monat_und_jahr.png" /></p>
+</div>
+<div class="section" id="bar-chart-horizontal">
+<h2>Bar Chart Horizontal<a class="headerlink" href="#bar-chart-horizontal" title="Permalink to this headline">¶</a></h2>
+<p>Für die Darstellung der 8 Autoren mit den meisten Videos habe ich mich für einen Bar-Chart mit horizontalen Balken entschieden. Da die Beschriftung der Balken durch Namen etwas länger werden kann, werden diese an der Y-Achse ausgerichtet und der Text ebenfalls horizontal angegeben. So kann der Betrachter die Namen leichter lesen. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik. Außerdem soll eine orangene, gestrichtelte Linie den Durchschnitt der Likes dieser Autoren anzeigen. So sieht man auf einen Blick welcher der Autoren über oder unter dem Durchschnitt dieser Autoren liegt. Um diesen Effekt zu verstärken sollen Balken unterhalb des Durchschnittes Beige und Balken über dem Durchschnitt Rot angezeigt werden.</p>
+<p><img alt="Horizontales Bar Chart" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/top_autoren.png" /></p>
+</div>
+<div class="section" id="bar-chart-vertikal">
+<h2>Bar Chart Vertikal<a class="headerlink" href="#bar-chart-vertikal" title="Permalink to this headline">¶</a></h2>
+<p>Für die Verteilung der veröffentlichten TED Talks der letzten 5 Jahre habe ich mich ebenfalls für ein Balkendiagramm entschieden. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik. Die X-Achse wird ohne linie dargestellt. Es soll eine orangene, gestrichtelte Linie für den Durchschnitt der veröffentlichten Videos der letzten 5 Jahre angezeigt werden. Die Balken sind grau. Wenn es ein positives Highlight gibt soll dieses in TED-Rot eingefärbt werden und negative Highlights in Beige. Außerdem soll rechts von der Grafik ein Highlight-Text angegeben werden. In diesem werden die Farben der vorgehobenen Balken aufgegriffen.</p>
+<p><img alt="Bar Chart verteilung Jahre" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/videos_jahre.jpeg" /></p>
+</div>
+<div class="section" id="bemerkung">
+<h2>Bemerkung<a class="headerlink" href="#bemerkung" title="Permalink to this headline">¶</a></h2>
+<p>Bitte beachten Sie das es sich hierbei um erste Skizzen handelt und die Darstellungen noch angepasst werden und evtl. noch neue Grafiken dazu kommen könnten.</p>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -378,6 +473,24 @@ const thebe_selector_output = ".output, .cell_output"
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="Darstellung_der_Grafiken.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Darstellung der Grafiken</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="Datenauswertung_und_Datenselektion_mit_Pandas.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Datenauswertung &amp; Datenselektion mit Pandas</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
 
 </div>
             

@@ -11,14 +11,18 @@
 | In welchem Jahr wurden die meisten TED Talks veröffentlicht?                 | Highlight Box     |
 | Wie viele Autoren gibt es?                                                   | Highlight Box     |
 | Wie hoch ist die durchschnittliche Like-Anzahl?                              | Highlight Box     |
+| Wie hoch ist die durchschnittliche View-Anzahl?                              | Highlight Box     |
 | Welches ist das Video mit den meisten Likes?                                 | Highlight Box     |
+| Welches ist das Video mit den meisten Views?                                 | Highlight Box     |
 | Welches ist das Video mit den wenigsten Likes?                               | Highlight Box     |
+| Welches ist das Video mit den wenigsten Views?                               | Highlight Box     |
 | **Analysis** |
-| In welchem Monat und Jahr kamen die meisten Ted Talks heraus?                | Bar Chart // Line |
-| Wie viele Videos wurden über die Jahre jährlich veröffentlicht?              | Bar Chart // Line |
-| Welcher Autor hat im Durchschnitt die meisten Likes auf die Videos erhalten? | Columns           |
+| In welchem Monat und Jahr kamen die meisten Ted Talks heraus?                | Line Chart        |
+| Wie viele Videos wurden über die Jahre jährlich veröffentlicht?              | Line Chart        |
+| Welcher Autor (Die 8 Autoren mit den meisten Videos) hat im Durchschnitt die meisten Likes auf die Videos erhalten? | Bar Chart|
+| Welcher Autor (Die 8 Autoren mit den meisten Videos) hat im Durchschnitt die meisten Views auf die Videos erhalten? | Bar Chart|
 | Korrelation zwischen Views und Likes                                         | Scatter plot      |
-| Welche Keywords können aus den Titeln der Talks abgeleitet werden?           | Columns           |
+| Welche Keywords können aus den Titeln der Talks abgeleitet werden?           | Columns & Wordcloud |
 | Wie häufig kommen diese Keywords in den Titeln der Talks vor?                | Columns           |
 
 
