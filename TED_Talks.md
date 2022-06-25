@@ -3,13 +3,13 @@ TED steht für Technology, Entertainment und Design. Der Name geht  auf die Anfa
 
 Die Auswahl an Ted Talks kann sehr überfordernd sein, da es inzwischen einfach sehr viele Videos gibt. Deswegen bietet Ted auch auf der Webseite eine Abfrage an, auf dessen Antworten Talks empfohlen  werden.  
 
-![Abfrage 1/2](/Users/marenabele/datastorytelling_newbook/Data_Storytelling_TED/Bild_1.png)
-![Abfrage 2/2](/Users/marenabele/datastorytelling_newbook/Data_Storytelling_TED/Bild_2.png)
+![Abfrage 1/2](../images//Bild_1.png)
+![Abfrage 2/2](../images/Bild_2.png)
 
 Manche Ted Talks kann man gut nebenher schauen und sich “berieseln” lassen. Manche sind fachlich spezifisch und man muss sie wirklich gezielt anschauen.  
 
 Außerdem gibt es auch Talks von bekannten Persönlichkeiten wie beispielsweise Elon Musk.  
-![Screenshot TED Talk mit Elon Musk](/Users/marenabele/datastorytelling_newbook/Data_Storytelling_TED/Bild_3.png)
+![Screenshot TED Talk mit Elon Musk](../images/Bild_3.png)
 
 Öffnet man ein Video sieht man wann dieses veröffentlicht wurde, wie oft es angeschaut wurde und wie viele Likes dieses Video bekommen hat. Außerdem kommt die Überschrift und eine Beschreibung zum Video. Wenn man wollte, könnte man sich auch das Transkript zum Talk durchlesen.  
 
