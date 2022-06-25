@@ -4,19 +4,37 @@
 # In _toc.yml
 format: jb-book
 root: intro
-chapters:
-- file: Einleitung
-- file: TED_Talks
-- file: Gewählter_Datensatz
-- file: Bid_Idea_Worksheet
-- file: Erste_Skizze_für_mein_Dashboard
-- file: Word_Cloud
-- file: Suchfunktion
-- file: Wichtige_Kennzahlen
-- file: Scatterplot
-- file: Datenauswertung_und_Datenselektion_mit_Pandas
-- file: Reporting
-- file: Corporate_Design
-- file: Darstellung_der_Grafiken
-- file: Dashboard_Programmierung_mit_Dash
-- file: Python_Libraries_und_sonstige_Hilfen
+parts:
+- caption: Start und Planung
+  chapters:
+  - file: Einleitung
+  - file: TED_Talks
+  - file: Gewählter_Datensatz
+  - file: Big_Idea_Worksheet
+  - file: Erste_Skizze_für_mein_Dashboard
+- caption: Gewählte Visualisierungen
+  chapters:
+  - file: Word_Cloud
+  - file: Suchfunktion
+  - file: Wichtige_Kennzahlen
+  - file: Scatterplot
+- caption: Darstellung  
+  chapters:
+  - file: Corporate_Design
+  - file: Darstellung_der_Grafiken
+- caption: Datenauswertung und Datenselektion mit Pandas
+  chapters: 
+  - file: Datenauswertung_und_Datenselektion_mit_Pandas
+- caption: Reporting
+  chapters:
+  - file: Reporting_Erstellung
+- caption: Dashboard  
+  chapters:
+  - file: Dashboard_Programmierung_mit_Dash
+- caption: Präsentation
+  chapters: 
+  - file: Storyboarding
+  - file: Präsentation_erstellen
+- caption: Python Libraries
+  chapters: 
+  - file: Python_Libraries_und_sonstige_Hilfen
