@@ -4,17 +4,27 @@ Um alle Schritte der Dokumentation nachvollziehen und durchführen zu können be
 * numpy
 * matplotlib
 * plotly
-* dash
+* altair
+  * flake8
+  * pytest
+  * jinja2
+  * sphinx
+  * m2r
+  * docutils
+  * vaga_datasets
+  * ipython
+* matplotlib
+* plotly
 * datetime
 * spacy
 * collections
 * re
 * wordcloud
-* PIL
-* os
-* shutil
-* fpdf
-* pypdf2
+* reportlab
+* dash
+
+
+
 
 Seiten/Cheat Sheets, die mir generell noch geholfen haben: 
 * [https://pandas.pydata.org/docs/user_guide/10min.html](https://pandas.pydata.org/docs/user_guide/10min.html)

@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skizzen der Grafiken &#8212; Data Storytelling - TED Talk Explorer</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Datenauswertung &amp; Datenselektion mit Pandas" href="Datenauswertung_und_Datenselektion_mit_Pandas.html" />
+    <link rel="prev" title="Darstellung der Grafiken" href="Darstellung_der_Grafiken.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo_ted.gif" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Storytelling - TED Talk Explorer</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Dieses Buch durchsuchen ..." aria-label="Dieses Buch durchsuchen ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Data Storytelling - TED Talk Explorer
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Start und Planung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Einleitung.html">
+   Einleitung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TED_Talks.html">
+   TED Talks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gew%C3%A4hlter_Datensatz.html">
+   Gewählter Datensatz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Big_Idea_Worksheet.html">
+   Big Idea Worksheet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Gewählte Visualisierungen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Word_Cloud.html">
+   Word Cloud
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Suchfunktion.html">
+   Suchfunktion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Scatterplot.html">
+   TED Scatterplot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Darstellung
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Corporate_Design.html">
+   Corporate Design
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Darstellung_der_Grafiken.html">
+   Darstellung der Grafiken
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Skizzen der Grafiken
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Datenauswertung und Datenselektion mit Pandas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Datenauswertung_und_Datenselektion_mit_Pandas.html">
+   Datenauswertung &amp; Datenselektion mit Pandas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reporting
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Reporting_Erstellung.html">
+   Reporting
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Dashboard
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Dashboard_Programmierung_mit_Dash.html">
+   Dashboard Programmierung mit Dash
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Präsentation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Storyboarding.html">
+   Storyboarding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Pr%C3%A4sentation_erstellen.html">
+   Erstellung der Präsenation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python Libraries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Python_Libraries_und_sonstige_Hilfen.html">
+   Python Libraries und sonstige Hilfen
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navigation umschalten" aria-controls="site-navigation"
+                title="Navigation umschalten" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Skizzen_der_Grafiken.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Marenabele/dokumentation_ted"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
+                    class="fab fa-github"></i>Repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Marenabele/dokumentation_ted/issues/new?title=Issue%20on%20page%20%2FSkizzen_der_Grafiken.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Vollbildmodus"
+        title="Vollbildmodus"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhalt
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wordcloud">
+   Wordcloud
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scatterplot">
+   Scatterplot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#line-chart">
+   Line Chart
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-horizontal">
+   Bar Chart Horizontal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-vertikal">
+   Bar Chart Vertikal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bemerkung">
+   Bemerkung
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Skizzen der Grafiken</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Inhalt </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wordcloud">
+   Wordcloud
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scatterplot">
+   Scatterplot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#line-chart">
+   Line Chart
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-horizontal">
+   Bar Chart Horizontal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bar-chart-vertikal">
+   Bar Chart Vertikal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bemerkung">
+   Bemerkung
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="skizzen-der-grafiken">
+<h1>Skizzen der Grafiken<a class="headerlink" href="#skizzen-der-grafiken" title="Permalink to this headline">¶</a></h1>
+<p>Im weiteren vorgehen habe ich zunächst meine Grafiken skizziert und mir vorgestellt, wie diese aussehen sollen. Hierfür habe ich mich an den Beispielen der Vorlesugnsfolien orientiert.</p>
+<div class="section" id="wordcloud">
+<h2>Wordcloud<a class="headerlink" href="#wordcloud" title="Permalink to this headline">¶</a></h2>
+<p>Wie bereits erwähnt möchte ich eine Wordcloud mit den Keywords aus den Titeln der TED Talks erstellen. Hierfür habe ich mich dazu entschieden, dass die Wordcloud in der Form des TED-Logos geformt sein soll. Die Farben sind wie im <span class="xref myst">Beitrag</span> erwähnt in dem Rot des Logos gehalten. Wobei auch orangene und beige Abstufungen enthalten sind. Je häufiger ein Keyword vorkommt, umso größer wird das Wort dargestellt.</p>
+<p><img alt="Skizze Wordcloud" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/Keywords.png" /></p>
+</div>
+<div class="section" id="scatterplot">
+<h2>Scatterplot<a class="headerlink" href="#scatterplot" title="Permalink to this headline">¶</a></h2>
+<p>Um das Verhältnis von Views und Likes darzustellen habe ich mich für einen Scatterplot entschieden. Die Gründe lesen Sie in dem Beitrag zu <span class="xref myst">Scatterplots</span>. Bei dieser Grafik habe ich mich dazu entschieden die Datenpunkte im TED-Rot darstellen zu lassen. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik.</p>
+<p><img alt="Skizze Scatterplot" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/korrelation.png" /></p>
+</div>
+<div class="section" id="line-chart">
+<h2>Line Chart<a class="headerlink" href="#line-chart" title="Permalink to this headline">¶</a></h2>
+<p>Für die Darstellung der veröffentlichten TED Talks nach Monat und Jahr der letzten 5 Jahre habe ich mich für ein Line-Chart entschieden, da man hier gut einen Verlauf über Zeiträume darstellen kann. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik. Die X-Achse zeigt die Zeit in Monate und Jahren an. Die Monate sind durch kürze Striche getrennt, die Jahre durch längere. Die Jahre werden dann mittig unterhalb der Monate angezeigt. Die Linie soll in einem Orange dargestellt werden, da Auffäligkeiten im Verlauf mit dem TED-rot gehighlightet werden sollen. Außerdem soll in der ganzen Grafik in einem leichten Beige der Durchschnitt an veröffentlichten Videos pro Monat in den letzten 5 Jahren angezeigt werden. So kann man schnell sehen, ob ein Monat über oder unter diesem Durchschnitt liegt.</p>
+<p><img alt="Line Chart Verteilung Monat und Jahr" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/videos_monat_und_jahr.png" /></p>
+</div>
+<div class="section" id="bar-chart-horizontal">
+<h2>Bar Chart Horizontal<a class="headerlink" href="#bar-chart-horizontal" title="Permalink to this headline">¶</a></h2>
+<p>Für die Darstellung der 8 Autoren mit den meisten Videos habe ich mich für einen Bar-Chart mit horizontalen Balken entschieden. Da die Beschriftung der Balken durch Namen etwas länger werden kann, werden diese an der Y-Achse ausgerichtet und der Text ebenfalls horizontal angegeben. So kann der Betrachter die Namen leichter lesen. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik. Außerdem soll eine orangene, gestrichtelte Linie den Durchschnitt der Likes dieser Autoren anzeigen. So sieht man auf einen Blick welcher der Autoren über oder unter dem Durchschnitt dieser Autoren liegt. Um diesen Effekt zu verstärken sollen Balken unterhalb des Durchschnittes Beige und Balken über dem Durchschnitt Rot angezeigt werden.</p>
+<p><img alt="Horizontales Bar Chart" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/top_autoren.png" /></p>
+</div>
+<div class="section" id="bar-chart-vertikal">
+<h2>Bar Chart Vertikal<a class="headerlink" href="#bar-chart-vertikal" title="Permalink to this headline">¶</a></h2>
+<p>Für die Verteilung der veröffentlichten TED Talks der letzten 5 Jahre habe ich mich ebenfalls für ein Balkendiagramm entschieden. Die Achsen Beschritungen sind bei der X-Achse am Anfang der Achse und bei der Y-Achse am Ende der Achse in Großbuchstaben. Der Titel der Grafik ist linksbündig über der Grafik. Die X-Achse wird ohne linie dargestellt. Es soll eine orangene, gestrichtelte Linie für den Durchschnitt der veröffentlichten Videos der letzten 5 Jahre angezeigt werden. Die Balken sind grau. Wenn es ein positives Highlight gibt soll dieses in TED-Rot eingefärbt werden und negative Highlights in Beige. Außerdem soll rechts von der Grafik ein Highlight-Text angegeben werden. In diesem werden die Farben der vorgehobenen Balken aufgegriffen.</p>
+<p><img alt="Bar Chart verteilung Jahre" src="Users/marenabele/opt/anaconda3/envs/jbook/dokumentation/dokumentation_ted/videos_jahre.jpeg" /></p>
+</div>
+<div class="section" id="bemerkung">
+<h2>Bemerkung<a class="headerlink" href="#bemerkung" title="Permalink to this headline">¶</a></h2>
+<p>Bitte beachten Sie das es sich hierbei um erste Skizzen handelt und die Darstellungen noch angepasst werden und evtl. noch neue Grafiken dazu kommen könnten.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="Darstellung_der_Grafiken.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Darstellung der Grafiken</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="Datenauswertung_und_Datenselektion_mit_Pandas.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Datenauswertung &amp; Datenselektion mit Pandas</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Durch Maren Abele<br/>
+    
+        &copy; Urheberrechte © 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
