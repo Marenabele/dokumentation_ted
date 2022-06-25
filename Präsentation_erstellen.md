@@ -1,4 +1,4 @@
-# Erstellung der Präsenation 
+# Erstellung der Präsentation 
 
 Für die Erstellung der Präsentation habe ich mich für [Canva](https://www.canva.com) entschieden. Auf der Webseite gibt es viele Vorlagen, die man ganz eingach anpassen kann. Ich habe mich für ein Design entschieden,dass meiner Meinung nach gut zum TED-Design passt. Ich habe das Design noch an die Farben von TED und das Layout an den Inhalt der Präsentation angepasst. 
 
