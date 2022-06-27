@@ -11,7 +11,7 @@ parts:
   - file: TED_Talks
   - file: Gewählter_Datensatz
   - file: Big_Idea_Worksheet
-  - file: Erste_Skizze_für_mein_Dashboard
+  - file: Skizze_Dashboard
 - caption: Gewählte Visualisierungen
   chapters:
   - file: Word_Cloud

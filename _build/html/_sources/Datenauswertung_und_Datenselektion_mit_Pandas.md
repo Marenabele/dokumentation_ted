@@ -10,7 +10,8 @@ Wobei ich mir beim 3. Schritt selbst nochmal klar gemacht habe, ob das Vorgehen 
 
 Die Aufgaben können in die 6 Kategorien aus den Vorlesungsfolien eingeteilt werden. So kann die Reihenfolge ebenfalls noch einmal angepasst werden. Ich habe die Reihenfolge der Vorgehensweise aber bereits während des Brainstormings angepasst, da ich es für mein Vorgehen passender fand. 
 
-![Vorgehensweise](/Users/marenabele/datastorytelling_newbook/Data_Storytelling_TED/Bild_7.png)
+![Vorgehensweise](./images/Bild_7.png)
+
 Quelle: Nussbaumer Knaflic, 2020 in Kirenz, J. (2021–09-28). Data Storytelling. 1. The importance of context.[Vorlesungsfolien]. Github Slides. [https://github.com/kirenz/data-storytelling/blob/main/slides/L01_context.pdf](https://github.com/kirenz/data-storytelling/blob/main/slides/L01_context.pdf) [Stand: 11.06.2022]
 
 **Data:**

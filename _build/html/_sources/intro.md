@@ -5,7 +5,7 @@ TED startete als eine jährlich stattfindende Konfernz. Die besten Videos bzw. V
 
 Deswegen wollte ich neue Erkenntnisse darüber heraus und neue Wege zur Darstellung dieser vielen Videos finden. 
 
-Hier finden Sie die Dokumentation zu meinem Projekt. Das Github Repository ist verlinkt. Dennich finden Sie [hier](https://github.com/Marenabele/dokumentation_ted) nochmal den Link dazu. 
+Hier finden Sie die Dokumentation zu meinem Projekt. Das Github Repository ist verlinkt. Dennoch finden Sie [hier](https://github.com/Marenabele/dokumentation_ted) nochmal den Link dazu. 
 
 Die Dokumentation ist in die folgenden Kapitel aufgeteilt: 
 
