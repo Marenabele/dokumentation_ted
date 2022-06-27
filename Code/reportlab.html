@@ -1,0 +1,943 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hier Dokumentiert, was in den einzelnen Schritten gemacht wird. &#8212; Data Storytelling - TED Talk Explorer</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo_ted.gif" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Storytelling - TED Talk Explorer</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Dieses Buch durchsuchen ..." aria-label="Dieses Buch durchsuchen ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Data Storytelling - TED Talk Explorer
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Start und Planung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Einleitung.html">
+   Einleitung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TED_Talks.html">
+   TED Talks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Gew%C3%A4hlter_Datensatz.html">
+   Gewählter Datensatz
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Big_Idea_Worksheet.html">
+   Big Idea Worksheet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Skizze_Dashboard.html">
+   Erste Skizze für mein Dashboard
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Gewählte Visualisierungen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Word_Cloud.html">
+   Word Cloud
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Suchfunktion.html">
+   Suchfunktion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Wichtige_Kennzahlen.html">
+   Wichtige Kennzahlen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Scatterplot.html">
+   TED Scatterplot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Darstellung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Corporate_Design.html">
+   Corporate Design
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Darstellung_der_Grafiken.html">
+   Darstellung der Grafiken
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Skizzen_der_Grafiken.html">
+   Skizzen der Grafiken
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Datenauswertung und Datenselektion mit Pandas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Datenauswertung_und_Datenselektion_mit_Pandas.html">
+   Datenauswertung &amp; Datenselektion mit Pandas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reporting
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Reporting_Erstellung.html">
+   Reporting
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Dashboard
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Dashboard_Programmierung_mit_Dash.html">
+   Dashboard Programmierung mit Dash
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Präsentation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Storyboarding.html">
+   Storyboarding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Pr%C3%A4sentation_erstellen.html">
+   Erstellung der Präsentation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Excel Export
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Excel.html">
+   Excel Export
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python Libraries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Python_Libraries_und_sonstige_Hilfen.html">
+   Python Libraries und sonstige Hilfen
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Navigation umschalten" aria-controls="site-navigation"
+                title="Navigation umschalten" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Laden Sie diese Seite herunter"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Code/reportlab.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Quelldatei herunterladen" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="In PDF drucken"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Marenabele/dokumentation_ted"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Quell-Repository"><i
+                    class="fab fa-github"></i>Repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Marenabele/dokumentation_ted/issues/new?title=Issue%20on%20page%20%2FCode/reportlab.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Öffnen Sie ein Problem"><i class="fas fa-lightbulb"></i>offenes Thema</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Vollbildmodus"
+        title="Vollbildmodus"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/Marenabele/dokumentation_ted/master?urlpath=tree/docs/Code/reportlab.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Starten Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhalt
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quellen">
+   Quellen
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Hier Dokumentiert, was in den einzelnen Schritten gemacht wird.</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Inhalt </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quellen">
+   Quellen
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="hier-dokumentiert-was-in-den-einzelnen-schritten-gemacht-wird">
+<h1>Hier Dokumentiert, was in den einzelnen Schritten gemacht wird.<a class="headerlink" href="#hier-dokumentiert-was-in-den-einzelnen-schritten-gemacht-wird" title="Permalink to this headline">¶</a></h1>
+<p>Die restliche Dokumentation wird über Kommentare in den Codeblöcken gemacht.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">reportlab.pdfgen</span> <span class="kn">import</span> <span class="n">canvas</span>
+<span class="kn">from</span> <span class="nn">reportlab.lib</span> <span class="kn">import</span> <span class="n">colors</span>
+<span class="kn">from</span> <span class="nn">reportlab.graphics</span> <span class="kn">import</span> <span class="n">shapes</span>
+<span class="kn">from</span> <span class="nn">reportlab.graphics</span> <span class="kn">import</span> <span class="n">charts</span>
+<span class="kn">from</span> <span class="nn">reportlab.graphics.charts.textlabels</span> <span class="kn">import</span> <span class="n">Label</span>
+<span class="kn">from</span> <span class="nn">reportlab.graphics.shapes</span> <span class="kn">import</span> <span class="n">Drawing</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+
+<span class="c1">#Page-Layout imports</span>
+<span class="kn">from</span> <span class="nn">reportlab.platypus</span> <span class="kn">import</span> <span class="n">SimpleDocTemplate</span><span class="p">,</span> <span class="n">Paragraph</span><span class="p">,</span> <span class="n">Spacer</span><span class="p">,</span> <span class="n">BaseDocTemplate</span><span class="p">,</span> <span class="n">Frame</span><span class="p">,</span> <span class="n">PageBreak</span><span class="p">,</span> <span class="n">PageTemplate</span>
+<span class="kn">from</span> <span class="nn">reportlab.lib.styles</span> <span class="kn">import</span> <span class="n">getSampleStyleSheet</span>
+<span class="kn">from</span> <span class="nn">reportlab.rl_config</span> <span class="kn">import</span> <span class="n">defaultPageSize</span>
+<span class="kn">from</span> <span class="nn">reportlab.lib.units</span> <span class="kn">import</span> <span class="n">cm</span>
+<span class="kn">from</span> <span class="nn">reportlab.lib.pagesizes</span> <span class="kn">import</span> <span class="n">A4</span><span class="p">,</span> <span class="n">landscape</span> 
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">reportlab.lib.styles</span> <span class="kn">import</span> <span class="n">getSampleStyleSheet</span>
+<span class="kn">from</span> <span class="nn">reportlab.platypus</span> <span class="kn">import</span> <span class="n">Frame</span><span class="p">,</span> <span class="n">Paragraph</span><span class="p">,</span> <span class="n">Table</span><span class="p">,</span> <span class="n">TableStyle</span>
+
+<span class="n">breite</span><span class="p">,</span> <span class="n">hoehe</span> <span class="o">=</span> <span class="n">landscape</span><span class="p">(</span><span class="n">A4</span><span class="p">)</span>
+<span class="n">styles</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span>
+
+<span class="c1">#https://www.youtube.com/watch?v=ZDR7-iSuwkQ</span>
+<span class="c1">#https://www.reportlab.com/docs/reportlab-userguide.pdf</span>
+
+<span class="c1">#Inhalt als Variable speichern, um daraug zurückzugreifen</span>
+<span class="n">pdf_name</span> <span class="o">=</span> <span class="s2">&quot;TED-Talk-Explorer-Report_reportlab.pdf&quot;</span>
+<span class="n">pdf_title</span><span class="o">=</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span>
+<span class="n">img_head</span> <span class="o">=</span> <span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/report_head.png&quot;</span>
+<span class="n">img_header</span> <span class="o">=</span> <span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/header_logo.png&quot;</span>
+<span class="n">img_ted_logo</span> <span class="o">=</span> <span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/logo_ted.gif&quot;</span>
+<span class="n">cover_page_txt</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;In diesem Report werden die Ergebnisse der&quot;</span> <span class="p">,</span> 
+<span class="s2">&quot;Datenanalyse mit Grafiken detallieter dargestellt und erläutert.&quot;</span><span class="p">]</span>
+
+<span class="c1">#Help für das Ausrichten</span>
+<span class="c1">#https://www.youtube.com/watch?v=ZDR7-iSuwkQ</span>
+<span class="k">def</span> <span class="nf">drawMyRuler</span><span class="p">(</span><span class="n">pdf</span><span class="p">):</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">810</span><span class="p">,</span> <span class="s2">&quot;x100&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">810</span><span class="p">,</span> <span class="s2">&quot;x200&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">810</span><span class="p">,</span> <span class="s2">&quot;x300&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">810</span><span class="p">,</span> <span class="s2">&quot;x400&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">810</span><span class="p">,</span> <span class="s2">&quot;x500&quot;</span><span class="p">)</span>
+
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;y100&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="s2">&quot;y200&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="s2">&quot;y300&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="s2">&quot;y400&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;y500&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="s2">&quot;y600&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="s2">&quot;y700&quot;</span><span class="p">)</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="s2">&quot;y800&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">tv</span><span class="o">/</span><span class="mi">6</span><span class="n">mgdbxz10v1gpyb8f0k66_mw0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_7734</span><span class="o">/</span><span class="mf">2797948144.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">reportlab.pdfgen</span> <span class="kn">import</span> <span class="n">canvas</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">reportlab.lib</span> <span class="kn">import</span> <span class="n">colors</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">reportlab.graphics</span> <span class="kn">import</span> <span class="n">shapes</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">reportlab.graphics</span> <span class="kn">import</span> <span class="n">charts</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">reportlab.graphics.charts.textlabels</span> <span class="kn">import</span> <span class="n">Label</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;reportlab&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Cover-Page kreieren</span>
+<span class="c1">#Das Raster wird auskommentiert, sobald die Seite fertig gestellt wurde</span>
+<span class="c1">#drawMyRuler(pdf)</span>
+
+<span class="n">pdf</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="n">pdf_name</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">setTitle</span><span class="p">(</span><span class="n">pdf_title</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_head</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica-Bold&quot;</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">650</span><span class="p">,</span> <span class="n">pdf_title</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_ted_logo</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">390</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#00000&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawCentredString</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">325</span><span class="p">,</span> <span class="s2">&quot;In diesem Report werden die Ergebnisse&quot;</span><span class="p">)</span> 
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawCentredString</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">305</span><span class="p">,</span> <span class="s2">&quot;der Datenanalyse mit Grafiken detallieter&quot;</span><span class="p">)</span> 
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawCentredString</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">285</span><span class="p">,</span> <span class="s2">&quot;dargestellt und erläutert.&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#2 Seite </span>
+
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 1 von 9&quot;</span><span class="p">)</span>
+
+<span class="c1">#Überschrift </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">765</span><span class="p">,</span> <span class="s2">&quot;1. Wissenswertes über den Datensatz&quot;</span><span class="p">)</span>
+
+<span class="c1">#TEXT</span>
+<span class="c1">#https://wiki.ubuntuusers.de/ReportLab/</span>
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">26</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;TED steht für Technology, Entertainment und Design. Der Name geht  auf die Anfangszeiten zurück, als TED noch eine Konferenz für die im Namen vorkommenden Themen war. Die erste TED Konferenz fand im Jahr 1984 statt. Später wurden die Vorträge beziehungsweise kurzen Talks (Vorträge) auf der Webseite kostenlos zur Verfügung gestellt. Heute findet man eine Vielzahl an Vorträgen zu vielen Themengebieten. TED Talks finden nicht nur zu den ursprünglichen Themen statt. Außerdem gibt es die Vorträge inzwischen in 110 Sprachen.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">23.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Für diesen Report wurden Daten aus einem Kaggle Datensatz verwendet. Der Ersteller des Datensatzes heißt Ashish Jangra und ist ein Entrepreneur und KI Trainer in Indien. In der Beschreibung des Datensatzes steht zudem, wie Herr Jangra die Daten zusammengestellt hat. Er hat dafür die Webseite von TED gecrawlt und sich die Daten gezogen, die er in den Datensatz packen wollte. Der Datensatz besteht aus den Variablen: Titel, Autor, Datum, Views, Likes und Links. Auf Grundlage dieser Variablen und Daten wurden Untersuchungen vorgenommen.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="s2">&quot;2. Verteilung der Videos&quot;</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">20.2</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Der Datensatz besteht aus insgesamt 5440 Videos.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Verteilung_allerVideos.png&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">320</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">400</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">10.2</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Diese Videos wurde über die Jahre 1970 bis 2022 veröffentlicht. Wie die Grafik zeigt, sind es in den Jahren ab 1970 bis ca. 2022 nur vereinzelte Videos. Ab 2002 sieht man einen deutlichen Anstieg an Videos pro Jahr. Was sich natürlich durch das Internet und die steigende Bekanntheit über die USA heraus erklären lässt. Die erste TED Konferenz fand 1984 statt, deswegen ist zu hinterfragen, was es mit den Videos vor diesem Jahr auf sich hat. Sind diese Talks im nachhinein auf die Webseite gestellt worden? Evtl. gibt es noch ein Video aus dieser Zeit, das zu der Idee der TED Konferenz geführt hat. Diese Videos könnten auch Fehler im System aufweisen und falsch datiert worden sein.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">7.0</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Das erste Video des Datensatzes ist auf Januar 1970 und das letzte Video des Datensatzes auf Februar 2022 datiert.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">5.9</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Im Jahr 2019 wurden 544 Videos veröffentlicht. Hier sieht man auch in der Grafik den höchsten Punkt. Gefolgt von den Jahren 2020 mit 501 und 2017 mit 495 Videos.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">4.8</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Dies zeigt, dass die meisten Videos in den letzten Jahren veröffentlicht wurden. Deswegen werden nun die Veröffentlichungen der letzten 5 Jahre aufgeschlüsselt.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 2</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 2 von 9&quot;</span><span class="p">)</span>
+
+<span class="c1">#FOTO </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/letzten5Jahre-kompletterDurchschnitt.png&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">520</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">400</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
+
+<span class="c1">#TEXT</span>
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">17.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Die rote Linie zeigt den Durchschnitt der Videos über den kompletten Datensatz. Zieht man alle Jahre heran, wurden durchschnittlich 181 Videos veröffentlicht. Dieser Durchschnitt wurde in den letzten 5 Jahren immer deutlich übertroffen. Dieser Fakt ist nicht weiter verwunderlich, wenn drei dieser 5 Jahre zu den Jahren mit den meisten veröffentlichten Videos gehört.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">15.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Deswegen schauen wir uns diese 5 Jahre noch mal etwas genauer an. Zieht man nämlich den durchschnitt dieser 5 Jahre heran, steigt dieser auf 481 Videos pro Jahr. So fällt auf, dass die drei Top Jahre über dem Durchschnitt liegen. 2018 ist etwas schwächer, kratzt aber noch an dem Durchschnitt. Es fällt jedoch auf, dass 2021 deutlich schwächer ist, als die Jahre davor. Es wurden weniger Talks veröffentlicht. Hierfür könnte ein möglicher Grund die Corona-Pandemie sein. Es mussten Maßnahmen eingehalten werden und es durften keine Großveranstaltungen stattfinden. Meistens werden TED Talks vor einem Live-Publikum aufgenommen. Deswegen könnte es hier zu einem Abfall der Veröffentlichungen gekommen sein.&quot;</span><span class="p">,</span> 
+<span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/letzte5jahre-durchschnitt5.png&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">400</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
+
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 3</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 3 von 9&quot;</span><span class="p">)</span>
+
+<span class="c1">#Überschrift </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">765</span><span class="p">,</span> <span class="s2">&quot;3. Likes und Views&quot;</span><span class="p">)</span>
+
+<span class="c1">#TEXT</span>
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">26</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Zwei weitere Variablen zum detaillierten Analysieren der Talks sind die Likes und Views der Videos. Zieht man alle 5440 des Datensatzes heran ergibt es eine durchschnittliche Like-Anzahl von 62.608 Likes pro Video.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">25</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Die Top 3 Videos mit den häufigsten Likes sind “Do schools kill creativity?” von Sir Ken Robinson, “Your body language may shape who you are” von Amy Cuddy und “Inside the mind of a master procrastinator” von Tim Urban. Diese Videos liegen mit 2.100.000, 1.900.000 und 1.800.000 weit über den durchschnittlichen Werten der Likes.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">23.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Die schlechtesten Videos gemessen an den Likes sind “Year In Ideas 2015” von unbekannt, “Post-Pandemic Paradise in Rapa Nui” von Far Flung und “Virtual Worlds” von Far Flung. Mit 15, 37 und 39 Likes sind diese Videos weit vom Durchschnitt entfernt.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">21.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Die durschnittliche View-Anzahl liegt bei 2.061.576 Aufrufen pro Video. Auch hier werden wieder die Top und die Flop Videos angeschaut. Mit 72.000.000, 64.000.000 und 60.000.000 Aufrufen sind es genau die gleichen Top 3 Videos gemessen an den Likes. Die schlechtesten 3 Videos gemessen an den Likes haben ebenfalls die schlechtesten Aufruf-Zahlen. Mit 532, 1200 und 1300 Aufrufen liegen diese Videos auch weit unter diesem Durchschnitt.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">19.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Aufgrund dieser Erkenntnisse kann man annehmen, dass es eine Korrelation zwischen Likes und Views gibt. &quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica-Bold&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">34</span><span class="p">,</span> <span class="mi">537</span><span class="p">,</span> <span class="s2">&quot;Korrelation&quot;</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">17.8</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Errechnet man den Korrelationskoeffizienten zwischen Views und Likes liegt dieser bei 0.99. Der Korrelationskoeffizient ist eine Einheit für den Grad eines linearen Zusammenhangs. Bei +1 besteht ein perfekter linearer Zusammenhang zwischen den zwei Variablen. Mit 0.99 ist der Zusammenhang zwischen den Views und Likes nahezu perfekt. Dies lässt sich auch gut in der Grafik erkennen.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/korrelation.png&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">105</span><span class="p">)</span>
+
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">2.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Eine gute Ergänzung zum Datensatz wäre eine Like-Quote, die das Verhältnis zwischen Views und Likes direkt angibt. So muss man nicht erst selbst ausrechnen, wie vielen Zuschauern das Video gefallen hat. Das beste Verhältnis sind 36.4%, das schlechteste sind 30.4%. Dies zeigt, dass rund einem Drittel der Zuschauer das Video auch gefällt.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 4</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 4 von 9&quot;</span><span class="p">)</span>
+
+<span class="c1">#Überschrift </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">765</span><span class="p">,</span> <span class="s2">&quot;4. Keywords&quot;</span><span class="p">)</span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">26</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Da es diese Vielzahl an Videos gibt, die auch aus verschiedensten Themengebieten stammen, wurden die Titel genauer analysiert. Die Titel bestehen aus insgesamt 41.645 Wörtern. Wenn man die gleichen Wörter zählt, kommt man auf 7.160. In diesen Wörtern sind die Top Wörter, solche wie “the”, “of”, “how”, “to”. Diese Wörter sagen allerdings nichts über den Inhalt des Videos aus. Diese Wörter werden aussortiert.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/wordcloud.png&quot;</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">515</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">17</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Die Top 10 Wörter in den Titeln sind dann life, world, new, future, change, work, help, climate, art und need. Diese Wörter sind auch gut in der Word Cloud sichtbar, da diese die Häufigkeit der Wörter mit einbezieht und dadurch die Größe der Wörter bestimmt.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Tabelle_Wörter.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">450</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 5</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 5 von 9&quot;</span><span class="p">)</span>
+
+<span class="c1">#Überschrift </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">765</span><span class="p">,</span> <span class="s2">&quot;5. Autoren&quot;</span><span class="p">)</span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">26</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Die TED Talks wurden von 4443 Autoren bzw. Speakern geschrieben und gehalten. Die Autoren mit den meisten Videos sind:&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">25.2</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Alex Gendler mit 45 Videos, Iseult Gillespie mit 33, Matt Walker mit 18, Alex Rosenthal mit 5, Elizabeth Cox mit 13, Emma Bryce mit 12, Daniel Finkel mit 11 und Juan Enriquez mit 11. Für diese 8 Autoren habe ich mich entschieden noch eine genauere Analyse zu erstellen. Da danach 6 Autoren mit einer gleichen Anzahl von Videos (9) folgen, habe ich den Cut bei 8 Autoren gesetzt.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Autoren_Views.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">390</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">440</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">290</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">12.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;In dieser Grafik werden die durchschnittlichen Views des Autors aufgezeigt. Wie man erkennen kann übertreffen nur 3 dieser 8 Autoren die durschnittliche View-Anzahl aller Videos von 2.061.576.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+<span class="c1">#FOTO</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Autoren_Likes.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">440</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">290</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 6</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 6 von 9&quot;</span><span class="p">)</span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">26.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Auch bei den Likes haben es nur Alex Gendler, Daniel Finkel und Emmy Bryce über die durchschnittliche Like-Anzahl von 62.608 geschafft. Das liegt natürlich auch am Zusammenhang zwischen Views und Likes.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">25</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Dennoch gilt, nur weil die Autoren viele Videos herausgebracht haben heißt das nicht, dass die Videos auch gleichzeitig eine gute Performance haben. Deswegen sollte man in Zukunft schauen, welche Autoren eine gute Performance auf ihre Videos haben.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#Überschrift </span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#FF2B06&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">660</span><span class="p">,</span> <span class="s2">&quot;6. Monatsvergleich&quot;</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">22.2</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Am Anfang wurden schon die Verteilungen der Videos nach Jahren dargestellt. Nun folgt noch eine Aufschlüsselung der Videos für die letzten 5 Jahre nach Monaten. &quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">21</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Die grauen Linien stellen die durchschnittlichen Videos pro Monat da. Es wurden in den letzten 5 Jahren durchschnittlich 40 Videos pro Monat veröffentlicht.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/2017_Monate.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">260</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">470</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mi">8</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Im Jahr 2017 gibt es 4 Monate die den Durchschnitt übersteigen. Der Monat mit den meisten Videos ist der April gefolgt von November, August und Dezember.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 7</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 7 von 9&quot;</span><span class="p">)</span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">26.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Im Jahr 2018 gibt es ebenfalls 4 Monate die den Durchschnitt übersteigen. Ebenfalls der April, November und Dezember. Aber auch im Oktober.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Monat_2018.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">420</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">470</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Monat_2019.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">470</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;In 2019 übersteigen die Monate April, Juli, September und November den durchschnittlichen Wert.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 7</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 8 von 9&quot;</span><span class="p">)</span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">26.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Der Oktober ist 2020 der Monat mit den meisten Videos. Aber auch im Februar, März, Juni und November wurde der Durchschnitt überschritten.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Monat_2020.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">420</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">470</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">13.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;2021 wurde 3 mal der Durchschnitt erreicht: im Mai, August und Oktober.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="c1">#FOTO</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="s2">&quot;/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/Grafiken/Monat_2021.png&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">470</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Seite 8</span>
+<span class="c1">#CODE für den HEADER</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawInlineImage</span><span class="p">(</span><span class="n">img_header</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">790</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">setFillColor</span><span class="p">(</span><span class="s2">&quot;#9a9695&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;TED Talk Explorer - Report&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">330</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Maren Abele&quot;</span><span class="p">)</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">drawString</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">807</span><span class="p">,</span> <span class="s2">&quot;Seite 9 von 9&quot;</span><span class="p">)</span>
+
+<span class="n">style</span> <span class="o">=</span> <span class="n">getSampleStyleSheet</span><span class="p">()</span>
+
+<span class="n">story</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="mi">1</span><span class="o">*</span><span class="n">cm</span><span class="p">,</span> <span class="n">breite</span><span class="o">-</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">cm</span><span class="p">),</span> <span class="mf">26.5</span><span class="o">*</span><span class="n">cm</span><span class="p">)</span>
+<span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s2">&quot;Es fällt auf, dass im April und eher am Ende des Jahres die meisten Videos veröffentlicht werden. Das hängt evtl. mit dem Zeitpunkt der eigentlichen Konferenz zusammen. Außerdem lässt es auf ein “Sommer-Loch” schließen, denn in den Monaten Juni, Juli werden eher weniger Videos veröffentlicht. Hier wäre es gut, wenn pro Monat ungefähr gleich viele Videos veröffentlicht werden würden, so gibt es keine Monate an denen es deutlich mehr neue Videos gibt und die Zuschauer überfordern könnten.&quot;</span><span class="p">,</span> <span class="n">style</span><span class="p">[</span><span class="s2">&quot;BodyText&quot;</span><span class="p">]))</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">addFromList</span><span class="p">(</span><span class="n">story</span><span class="p">,</span> <span class="n">pdf</span><span class="p">)</span>
+
+<span class="n">pdf</span><span class="o">.</span><span class="n">showPage</span><span class="p">()</span>
+<span class="n">pdf</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="quellen">
+<h2>Quellen<a class="headerlink" href="#quellen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.reportlab.com/docs/reportlab-userguide.pdf">https://www.reportlab.com/docs/reportlab-userguide.pdf</a> Generelle Doku</p></li>
+<li><p><a class="reference external" href="https://code-maven.com/create-multipage-pdf-file-in-python">https://code-maven.com/create-multipage-pdf-file-in-python</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=kzmyFTwIJw8&amp;list=PLI8raxzYtfGzwEqGLm4fCnnbTAGbSHa6-">https://www.youtube.com/watch?v=kzmyFTwIJw8&amp;list=PLI8raxzYtfGzwEqGLm4fCnnbTAGbSHa6-</a> Hier mehrere Videos aus der Playliste</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Code"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Durch Maren Abele<br/>
+    
+        &copy; Urheberrechte © 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,85 @@
+Traceback (most recent call last):
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 664, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/marenabele/opt/anaconda3/envs/jbook/lib/python3.7/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from reportlab.pdfgen import canvas
+from reportlab.lib import colors
+from reportlab.graphics import shapes
+from reportlab.graphics import charts
+from reportlab.graphics.charts.textlabels import Label
+from reportlab.graphics.shapes import Drawing
+import pandas as pd
+
+
+#Page-Layout imports
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, BaseDocTemplate, Frame, PageBreak, PageTemplate
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.rl_config import defaultPageSize
+from reportlab.lib.units import cm
+from reportlab.lib.pagesizes import A4, landscape 
+import random
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Frame, Paragraph, Table, TableStyle
+
+breite, hoehe = landscape(A4)
+styles = getSampleStyleSheet
+
+#https://www.youtube.com/watch?v=ZDR7-iSuwkQ
+#https://www.reportlab.com/docs/reportlab-userguide.pdf
+
+#Inhalt als Variable speichern, um daraug zurückzugreifen
+pdf_name = "TED-Talk-Explorer-Report_reportlab.pdf"
+pdf_title= "TED Talk Explorer - Report"
+img_head = "/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/report_head.png"
+img_header = "/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/header_logo.png"
+img_ted_logo = "/Users/marenabele/Desktop/Data-Storytelling_2.0/Data/logo_ted.gif"
+cover_page_txt = ["In diesem Report werden die Ergebnisse der" , 
+"Datenanalyse mit Grafiken detallieter dargestellt und erläutert."]
+
+#Help für das Ausrichten
+#https://www.youtube.com/watch?v=ZDR7-iSuwkQ
+def drawMyRuler(pdf):
+    pdf.drawString(100, 810, "x100")
+    pdf.drawString(200, 810, "x200")
+    pdf.drawString(300, 810, "x300")
+    pdf.drawString(400, 810, "x400")
+    pdf.drawString(500, 810, "x500")
+
+    pdf.drawString(10, 100, "y100")
+    pdf.drawString(10, 200, "y200")
+    pdf.drawString(10, 300, "y300")
+    pdf.drawString(10, 400, "y400")
+    pdf.drawString(10, 500, "y500")
+    pdf.drawString(10, 600, "y600")
+    pdf.drawString(10, 700, "y700")
+    pdf.drawString(10, 800, "y800")
+
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+[0;32m/var/folders/tv/6mgdbxz10v1gpyb8f0k66_mw0000gn/T/ipykernel_7734/2797948144.py[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0;32mfrom[0m [0mreportlab[0m[0;34m.[0m[0mpdfgen[0m [0;32mimport[0m [0mcanvas[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0;32mfrom[0m [0mreportlab[0m[0;34m.[0m[0mlib[0m [0;32mimport[0m [0mcolors[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0;32mfrom[0m [0mreportlab[0m[0;34m.[0m[0mgraphics[0m [0;32mimport[0m [0mshapes[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0;32mfrom[0m [0mreportlab[0m[0;34m.[0m[0mgraphics[0m [0;32mimport[0m [0mcharts[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0;32mfrom[0m [0mreportlab[0m[0;34m.[0m[0mgraphics[0m[0;34m.[0m[0mcharts[0m[0;34m.[0m[0mtextlabels[0m [0;32mimport[0m [0mLabel[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mModuleNotFoundError[0m: No module named 'reportlab'
+ModuleNotFoundError: No module named 'reportlab'
+
