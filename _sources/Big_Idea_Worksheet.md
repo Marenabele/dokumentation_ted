@@ -7,7 +7,7 @@ Das Big Idea Worksheet ist eine Methode, um auf seine Hauptaussage zu kommen. Hi
 
 Ergebnis ist es, in einem Satz seine Idee beschreiben zu können. So ist einem klar, worauf man hinaus möchte. 
 
-![Bid Idea Worksheet](/Users/marenabele/datastorytelling_newbook/Data_Storytelling_TED/Bild_4.png)
+![Bid Idea Worksheet](./images/Bild_4.png)
 
 ### Quellen:
 Nussbaumer Knaflic, C. (o. D.). the Big Idea for YOUR project. Storytelling with Data | Exercises. [https://community.storytellingwithdata.com/exercises/the-big-idea-for-your-project](https://community.storytellingwithdata.com/exercises/the-big-idea-for-your-project) [Stand:24.05.2022]
