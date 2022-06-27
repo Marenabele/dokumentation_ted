@@ -17,5 +17,5 @@ Die Dokumentation der eigentlichen Erstellung des Reports finden Sie in dem Jupy
 ### Quellen:
 Salesforce. (o. D.). Reporting: Bedeutung, Probleme und Lösungen. Tableau. [https://www.tableau.com/de-de/learn/articles/what-is-reporting](https://www.tableau.com/de-de/learn/articles/what-is-reporting) [Stand: 12.06.2022]
 
-Code: [Code im Github Repository]()
-Output: [Output im Github Repository]()
+Code: [Code im Github Repository](https://github.com/Marenabele/dokumentation_ted/blob/main/Code/reportlab.ipynb)
+Output: [Output im Github Repository](https://github.com/Marenabele/dokumentation_ted/blob/main/Code/TED-Talk-Explorer-Report_reportlab.pdf)

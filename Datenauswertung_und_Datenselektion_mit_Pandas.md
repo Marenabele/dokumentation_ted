@@ -53,5 +53,7 @@ Quelle: Nussbaumer Knaflic, 2020 in Kirenz, J. (2021–09-28). Data Storytelling
 
 Die Dokumentation der eigentlichen Auswertung finden Sie in dem Jupyter Notebook im Github Repository. Hier wurden die Schritte in der Datei kommentiert. 
 
+Code: [Code im Github Repository](https://github.com/Marenabele/dokumentation_ted/blob/main/Code/Ted-Talks.ipynb)
+
 ### Quellen:
 Nussbaumer Knaflic, 2020 in Kirenz, J. (2021–09-28). Data Storytelling. 1. The importance of context.[Vorlesungsfolien]. Github Slides. [https://github.com/kirenz/data-storytelling/blob/main/slides/L01_context.pdf](https://github.com/kirenz/data-storytelling/blob/main/slides/L01_context.pdf) [Stand: 11.06.2022]

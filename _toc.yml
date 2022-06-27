@@ -36,7 +36,7 @@ parts:
   chapters: 
   - file: Storyboarding
   - file: Präsentation_erstellen
-- captio: Excel Export
+- caption: Excel Export
   chapters:
     -file: Excel
 - caption: Python Libraries
