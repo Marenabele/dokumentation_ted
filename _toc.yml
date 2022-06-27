@@ -38,7 +38,7 @@ parts:
   - file: Präsentation_erstellen
 - caption: Excel Export
   chapters:
-    -file: Excel
+  - file: Excel
 - caption: Python Libraries
   chapters: 
   - file: Python_Libraries_und_sonstige_Hilfen
